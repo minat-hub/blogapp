@@ -15,4 +15,5 @@ urlpatterns = [
     path('<int:post_id>/share/',
          views.post_share, name='post_share'),
     path('feed/', LatestPostsFeed(), name='post_feed'),
+    path('update_server/', views.update, name="update"),
 ]
